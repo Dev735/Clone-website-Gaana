@@ -6,7 +6,6 @@ let ProgressBar = document.getElementById('bar');
 let gif = document.getElementById('gif');
 let playing= document.getElementById('playing');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
-let smallplay = document.getElementById('0');
 
 
 window.onscroll = function() {myFunction()};
@@ -126,26 +125,14 @@ if(audioElement.paused||audioElement.currentTime<=0){
     audioElement.src = `songs/${songIndex+1}.mp3`;
     playing.innerText = songs[songIndex].songName;
     
-    if(audioElement.paused){
+   
         audioElement.currentTime = 0;
         audioElement.play();
         Play.classList.remove('fa-play-circle');
         Play.classList.add('fa-pause-circle');
-        smallplay.classList.remove('fa-play-circle');
-        smallplay.classList.add('fa-pause-circle');
+        
         
         gif.style.opacity=1; 
-    }
-        else{
-            audioElement.pause();
-           
-            Play.classList.remove('fa-pause-circle');
-            Play.classList.add('fa-play-circle');
-            smallplay.classList.remove('fa-pause-circle');
-            smallplay.classList.add('fa-play-circle');
-            gif.style.opacity = 0;
-        }
-
-
+    
     } )
     )
