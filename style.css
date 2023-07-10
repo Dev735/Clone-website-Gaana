@@ -54,7 +54,7 @@ img{
 
 }
 .back{
-    background-color: lightsalmon;
+    background-color: rgb(227, 236, 202);
 }
 
 .container{
@@ -86,7 +86,7 @@ img{
 .songItem{
     height: 50px;
     display: flex;
-    background-color: rgb(222, 235, 188);
+    background-color: rgb(230, 201, 108);
     
     color: black;
     margin: 12px 0;
